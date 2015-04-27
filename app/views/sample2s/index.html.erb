@@ -2,6 +2,14 @@
 
 <h1>Listing Sample2s</h1>
 
+<%# search function added by miyasaka %>
+<%= form_tag sample2s_path, :method => 'get' do %>
+  <p>
+     <%= text_field_tag :search, params[:search] %>
+     <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
 <table>
   <thead>
     <tr>
