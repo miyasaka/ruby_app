@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  resources :pages
-
   resources :sample2s
 
   get 'sample/hello'
@@ -9,7 +7,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  # root 'sample#index'
   root 'sample2s#index'
 
   # Example of regular route:

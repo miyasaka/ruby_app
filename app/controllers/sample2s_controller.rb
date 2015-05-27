@@ -4,8 +4,9 @@ class Sample2sController < ApplicationController
   # GET /sample2s
   # GET /sample2s.json
   def index
-    #view のformで入力された検索条件
+    #original
     # @sample2s = Sample2.all
+    #view のformで入力された検索条件 modified by Miyasaka
     @sample2s = Sample2.search(params[:search])
   end
 
@@ -15,7 +16,8 @@ class Sample2sController < ApplicationController
   end
 
   #Serach function by miyasaka
-  def self.search(search)
+  #def self.search(search)
+  def search(search)
     if search
        find(:all, :conditions => ['col1 LIKE ?', "%#{search}%"])
     else

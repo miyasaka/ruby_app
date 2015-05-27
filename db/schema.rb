@@ -13,44 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20150410092314) do
 
-  create_table "buses", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.string   "title",      limit: 255
-    t.integer  "service_cd", limit: 4
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-  end
-
-  create_table "countries", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.string   "title",      limit: 255
-    t.integer  "service_cd", limit: 4
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-  end
-
-  create_table "messages", force: :cascade do |t|
-    t.string   "body",       limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-  end
-
-  create_table "pages", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.string   "title",      limit: 255
-    t.integer  "service_cd", limit: 4
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-  end
-
-  create_table "pageys", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.string   "title",      limit: 255
-    t.integer  "service_cd", limit: 4
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-  end
-
   create_table "sample2s", force: :cascade do |t|
     t.text     "col1",       limit: 65535
     t.datetime "created_at",               null: false
